@@ -1,0 +1,33 @@
+/* Hide scrollbars but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* For horizontal scrolling tabs */
+.tabs-scrollable {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 4px;
+  gap: 4px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+
+.tabs-scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+/* Make tab triggers adapt to scrolling context */
+.tabs-scrollable [data-state="active"] {
+  background-color: rgba(255, 255, 255, 0.1);
+} 

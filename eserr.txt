@@ -1,0 +1,250 @@
+
+> my-v0-project@0.1.0 lint /media/dork/Backup/Code/homepage/frontend
+> next lint
+
+ ELIFECYCLE  Command failed with exit code 1.
+./app/auth/forgot-password/page.tsx
+Error: Parsing error: Expression expected.
+
+./app/auth/login/page.tsx
+Error: Parsing error: Expression expected.
+
+./app/auth/register/page.tsx
+Error: Parsing error: Expression expected.
+
+./app/layout.tsx
+Error: Parsing error: Expression expected.
+
+./app/loading.tsx
+Error: Parsing error: Expression expected.
+
+./app/page.tsx
+Error: Parsing error: Expression expected.
+
+./app/profile/page.tsx
+100:16  Warning: 'error' is defined but never used. Allowed unused caught errors must match /^_/u.  @typescript-eslint/no-unused-vars
+
+./components/bookmarks/bookmark-item.tsx
+18:21  Error: React Hook "useToast" is called in function "_BookmarkItem" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+19:45  Error: React Hook "useBookmarkSync" is called in function "_BookmarkItem" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+20:37  Error: React Hook "useState" is called in function "_BookmarkItem" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+21:49  Error: React Hook "useState" is called in function "_BookmarkItem" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+22:47  Error: React Hook "useState" is called in function "_BookmarkItem" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+24:37  Error: React Hook "useState" is called in function "_BookmarkItem" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+357:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+359:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/bookmarks/bookmark-sync-status.tsx
+11:78  Error: React Hook "useBookmarkSync" is called in function "_BookmarkSyncStatus" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+12:19  Error: React Hook "useMounted" is called in function "_BookmarkSyncStatus" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/bookmarks/bookmarks-grid.tsx
+5:29  Warning: 'TabsList' is defined but never used. Allowed unused vars must match /^_/u.  @typescript-eslint/no-unused-vars
+5:39  Warning: 'TabsTrigger' is defined but never used. Allowed unused vars must match /^_/u.  @typescript-eslint/no-unused-vars
+15:16  Warning: 'uuidv4' is defined but never used. Allowed unused vars must match /^_/u.  @typescript-eslint/no-unused-vars
+18:10  Warning: 'cn' is defined but never used. Allowed unused vars must match /^_/u.  @typescript-eslint/no-unused-vars
+39:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+84:6  Warning: React Hook useEffect has a missing dependency: 'fetchBookmarks'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/challenge-banner.tsx
+13:41  Error: React Hook "useState" is called in function "_ChallengeBanner" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/challenge-details-dialog.tsx
+27:21  Error: React Hook "useToast" is called in function "_ChallengeDetailsDialog" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+28:9  Warning: The 'endDate' object construction makes the dependencies of useEffect Hook (at line 55) change on every render. Move it inside the useEffect callback. Alternatively, wrap the initialization of 'endDate' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+29:35  Error: React Hook "useState" is called in function "_ChallengeDetailsDialog" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+35:44  Error: React Hook "useState" is called in function "_ChallengeDetailsDialog" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+37:3  Error: React Hook "useEffect" is called in function "_ChallengeDetailsDialog" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+76:19  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+151:118  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+161:24  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+174:37  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./components/current-challenge-section.tsx
+28:35  Error: React Hook "useState" is called in function "_CurrentChallengeSection" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+34:49  Error: React Hook "useState" is called in function "_CurrentChallengeSection" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+35:33  Error: React Hook "useState" is called in function "_CurrentChallengeSection" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+37:3  Error: React Hook "useEffect" is called in function "_CurrentChallengeSection" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/events/team-power-section.tsx
+47:56  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./components/hacking/hacking-platforms-widget.tsx
+126:25  Error: React Hook "useState" is called in function "_HackingPlatformsWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+127:25  Error: React Hook "useState" is called in function "_HackingPlatformsWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+128:37  Error: React Hook "useState" is called in function "_HackingPlatformsWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+129:39  Error: React Hook "useState" is called in function "_HackingPlatformsWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+130:33  Error: React Hook "useState" is called in function "_HackingPlatformsWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+131:50  Error: React Hook "useState" is called in function "_HackingPlatformsWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+132:31  Error: React Hook "useAuth" is called in function "_HackingPlatformsWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+133:21  Error: React Hook "useToast" is called in function "_HackingPlatformsWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+327:3  Error: React Hook "useEffect" is called in function "_HackingPlatformsWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+472:6  Warning: React Hook useEffect has missing dependencies: 'fetchHackingProfiles', 'fetchTryHackMeBadges', 'fetchTryHackMeRank', 'fetchTryHackMeRooms', 'fetchTryHackMeTickets', and 'fetchTryHackMeUserData'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+522:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+528:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+541:23  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+552:25  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+605:35  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/hacking/hacking-platforms.tsx
+22:25  Error: React Hook "useState" is called in function "_HackingPlatforms" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+23:25  Error: React Hook "useState" is called in function "_HackingPlatforms" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+24:33  Error: React Hook "useState" is called in function "_HackingPlatforms" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+26:3  Error: React Hook "useEffect" is called in function "_HackingPlatforms" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+85:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+91:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/hero-section.tsx
+10:35  Error: React Hook "useState" is called in function "_HeroSection" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+11:49  Error: React Hook "useState" is called in function "_HeroSection" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+12:37  Error: React Hook "useAuth" is called in function "_HeroSection" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+14:3  Error: React Hook "useEffect" is called in function "_HeroSection" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/news/tech-news-widget.tsx
+7:33  Error: React Hook "useState" is called in function "_TechNewsWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/profile/profile-hacking-form.tsx
+21:37  Error: React Hook "useState" is called in function "_ProfileHackingForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+26:37  Error: React Hook "useState" is called in function "_ProfileHackingForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+27:35  Error: React Hook "useState" is called in function "_ProfileHackingForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+28:31  Error: React Hook "useAuth" is called in function "_ProfileHackingForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+29:21  Error: React Hook "useToast" is called in function "_ProfileHackingForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+32:3  Error: React Hook "useEffect" is called in function "_ProfileHackingForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+197:6  Warning: React Hook useEffect has a missing dependency: 'platforms'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+257:26  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./components/profile/profile-social-form.tsx
+22:37  Error: React Hook "useState" is called in function "_ProfileSocialForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+28:37  Error: React Hook "useState" is called in function "_ProfileSocialForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+29:35  Error: React Hook "useState" is called in function "_ProfileSocialForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+30:31  Error: React Hook "useAuth" is called in function "_ProfileSocialForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+31:21  Error: React Hook "useToast" is called in function "_ProfileSocialForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+34:3  Error: React Hook "useEffect" is called in function "_ProfileSocialForm" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+200:6  Warning: React Hook useEffect has a missing dependency: 'platforms'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/profile-button.tsx
+24:45  Error: React Hook "useAuth" is called in function "_ProfileButton" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+25:33  Error: React Hook "useState" is called in function "_ProfileButton" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+28:3  Error: React Hook "useEffect" is called in function "_ProfileButton" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/social/social-profiles-widget.tsx
+80:35  Error: React Hook "useState" is called in function "_SocialProfilesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+81:33  Error: React Hook "useState" is called in function "_SocialProfilesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+82:31  Error: React Hook "useAuth" is called in function "_SocialProfilesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+83:22  Error: React Hook "useToast" is called in function "_SocialProfilesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+152:43  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+438:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+451:49  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+650:58  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+748:42  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+762:3  Error: React Hook "useEffect" is called in function "_SocialProfilesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+795:75  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+802:35  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+805:76  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+808:65  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+820:78  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+932:6  Warning: React Hook useEffect has missing dependencies: 'getDefaultProfiles', 'getPlatformFallback', 'processGithubProfile', 'processTwitterProfile', and 'processYouTubeProfile'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+1164:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+1243:27  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/social/social-profiles.tsx
+61:35  Error: React Hook "useState" is called in function "_SocialProfiles" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+62:33  Error: React Hook "useState" is called in function "_SocialProfiles" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+63:31  Error: React Hook "useAuth" is called in function "_SocialProfiles" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+64:22  Error: React Hook "useToast" is called in function "_SocialProfiles" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+115:43  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+194:46  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+227:44  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+268:48  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+322:42  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+439:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+452:49  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+556:42  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+566:3  Error: React Hook "useEffect" is called in function "_SocialProfiles" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+599:35  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+602:77  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+666:6  Warning: React Hook useEffect has missing dependencies: 'processGithubProfile' and 'processYouTubeProfile'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+901:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+983:33  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/team-selection-dialog.tsx
+43:49  Error: React Hook "useState" is called in function "_TeamSelectionDialog" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+44:41  Error: React Hook "useState" is called in function "_TeamSelectionDialog" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+45:29  Error: React Hook "useState" is called in function "_TeamSelectionDialog" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/ui/toaster.tsx
+7:22  Error: React Hook "useToast" is called in function "_Toaster" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/ui/use-mobile.tsx
+6:35  Error: React Hook "React.useState" is called in function "_useIsMobile" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+8:3  Error: React Hook "React.useEffect" is called in function "_useIsMobile" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/widgets/clock-widget.tsx
+10:27  Error: React Hook "useState" is called in function "_ClockWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+11:33  Error: React Hook "useState" is called in function "_ClockWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+12:27  Error: React Hook "useState" is called in function "_ClockWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+14:3  Error: React Hook "useEffect" is called in function "_ClockWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/widgets/quick-notes-widget.tsx
+53:14  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+54:14  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+59:41  Error: React Hook "useState" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+67:29  Error: React Hook "useState" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+68:37  Error: React Hook "useState" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+69:35  Error: React Hook "useState" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+70:43  Error: React Hook "useState" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+71:45  Error: React Hook "useState" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+72:41  Error: React Hook "useState" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+73:59  Error: React Hook "useState" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+74:39  Error: React Hook "useState" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+75:44  Error: React Hook "useState" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+76:45  Error: React Hook "useState" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+77:24  Error: React Hook "useRef" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+78:21  Error: React Hook "useRef" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+79:31  Error: React Hook "useRef" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+80:29  Error: React Hook "useRef" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+81:21  Error: React Hook "useToast" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+82:31  Error: React Hook "useAuth" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+86:3  Error: React Hook "useEffect" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+102:3  Error: React Hook "useEffect" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+138:61  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+230:3  Error: React Hook "useEffect" is called in function "_QuickNotesWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+274:6  Warning: React Hook useEffect has missing dependencies: 'handleSave' and 'toggleFullscreen'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/widgets/search-bar.tsx
+12:29  Error: React Hook "useState" is called in function "_SearchBar" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/widgets/terminal-widget.tsx
+68:33  Error: React Hook "useState" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+69:37  Error: React Hook "useAuth" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+70:49  Error: React Hook "useState" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+71:33  Error: React Hook "useState" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+74:29  Error: React Hook "useState" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+75:39  Error: React Hook "useState" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+76:37  Error: React Hook "useState" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+77:26  Error: React Hook "useRef" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+78:20  Error: React Hook "useRef" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+79:22  Error: React Hook "useToast" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+81:47  Error: React Hook "useState" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+82:33  Error: React Hook "useState" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+85:3  Error: React Hook "useEffect" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+198:3  Error: React Hook "useEffect" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+229:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+346:3  Error: React Hook "useEffect" is called in function "_TerminalWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./components/widgets/weather-widget.tsx
+11:33  Error: React Hook "useState" is called in function "_WeatherWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+12:33  Error: React Hook "useState" is called in function "_WeatherWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+13:29  Error: React Hook "useState" is called in function "_WeatherWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+14:33  Error: React Hook "useState" is called in function "_WeatherWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+15:39  Error: React Hook "useState" is called in function "_WeatherWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+18:3  Error: React Hook "useEffect" is called in function "_WeatherWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+22:3  Error: React Hook "useEffect" is called in function "_WeatherWidget" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./lib/bookmark-sync-service.ts
+Error: Parsing error: Expression expected.
+
+./lib/weather-service.ts
+57:34  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
