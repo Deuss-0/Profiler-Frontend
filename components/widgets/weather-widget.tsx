@@ -88,9 +88,9 @@ export function WeatherWidget() {
   // Generate URL for external weather site
   const getWeatherUrl = (weather: WeatherData) => {
     if (isMockData) {
-      return "https://openweathermap.org";
+      return "https://weather.deuss.space";
     }
-    return `https://openweathermap.org/city/${weather.coordinates.lat},${weather.coordinates.lon}`;
+    return `https://weather.deuss.space/`;
   }
 
   const cardVariants = {

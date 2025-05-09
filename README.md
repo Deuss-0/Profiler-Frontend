@@ -71,17 +71,18 @@ A modern, feature-rich dashboard for cybersecurity professionals, built with Nex
    ```
 
 3. Set up environment variables:
-   Create a `.env.local` file with:
+   Move .env.example to `.env` file with:
    ```
-   NEXT_PUBLIC_API_URL=your_backend_api_url
+   mv .env.example .env
    ```
+4. Change the Backend API URL and openweatherapi key
 
-4. Start the development server:
+5. Start the development server:
    ```bash
    pnpm dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
+6. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## 🔧 Available Scripts
 

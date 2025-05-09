@@ -18,7 +18,7 @@ type SocialProfile = {
   apiKey?: string
 }
 
-export function _ProfileSocialForm() {
+export function ProfileSocialForm() {
   const [platforms, setPlatforms] = useState<SocialProfile[]>([
     { platform: "github", username: "", url: "https://github.com/", connected: false },
     { platform: "twitter", username: "", url: "https://twitter.com/", connected: false, apiKey: "" },
@@ -67,7 +67,7 @@ export function _ProfileSocialForm() {
                   console.log('Retrieved valid token after session refresh');
                 }
               } catch (_) {
-                console.error('Failed to refresh session:', e);
+                console.error('Failed to refresh session:', _);
               }
             }
             

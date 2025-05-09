@@ -331,6 +331,11 @@ export default function CybersecurityDashboard() {
             teamMembers={currentChallenge.teamMembers}
           />
         )}*/}
+
+          {/* Bookmarks */}
+          <div className="mb-6">
+          <BookmarksGrid />
+        </div>
         
         {/* Platform Widgets */}
          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -338,10 +343,7 @@ export default function CybersecurityDashboard() {
           <SocialProfilesWidget />
         </div>
 
-         {/* Bookmarks */}
-         <div className="mb-6">
-          <BookmarksGrid />
-        </div>
+       
 
         {/* Middle Widgets */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">

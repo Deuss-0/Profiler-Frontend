@@ -301,4 +301,5 @@ const bookmarkSyncService = typeof window !== 'undefined'
   ? new BookmarkSyncService() 
   : null;
 
+export { bookmarkSyncService };
 export default bookmarkSyncService; 

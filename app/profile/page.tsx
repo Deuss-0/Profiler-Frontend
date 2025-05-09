@@ -21,7 +21,7 @@ export default function ProfilePage() {
   const { user, isAuthenticated, isLoading, checkSession } = useAuth()
   const [isUpdating, setIsUpdating] = useState(false)
   const [formData, setFormData] = useState({
-    fullName: "",
+    full_name: "",
     email: "",
     bio: "",
     country: "",
@@ -29,7 +29,7 @@ export default function ProfilePage() {
   })
   const { toast } = useToast()
   const router = useRouter()
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://sigh-ai.com'
+  const API_URL = process.env.NEXT_PUBLIC_API_URL
 
   useEffect(() => {
     if (!isLoading && !isAuthenticated) {
@@ -43,11 +43,11 @@ export default function ProfilePage() {
 
     if (user) {
       setFormData({
-        fullName: user.fullName || "",
+        full_name: user.full_name || "",
         email: user.email || "",
         bio: localStorage.getItem("userBio") || "",
         country: localStorage.getItem("userCountry") || "",
-        avatar: user.avatar || "",
+        avatar: user.avatar_url || "",
       })
     }
   }, [isLoading, isAuthenticated, router, user, toast])
@@ -84,7 +84,7 @@ export default function ProfilePage() {
         headers,
         credentials: "include",
         body: JSON.stringify({
-          fullName: formData.fullName,
+          full_name: formData.full_name,
           email: formData.email,
           country: formData.country,
         }),
@@ -181,12 +181,12 @@ export default function ProfilePage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="fullName">Full Name</Label>
+                  <Label htmlFor="full_name">Full Name</Label>
                   <Input
-                    id="fullName"
-                    name="fullName"
+                    id="full_name"
+                    name="full_name"
                     placeholder="Your full name"
-                    value={formData.fullName}
+                    value={formData.full_name}
                     onChange={handleInputChange}
                     className="bg-slate-800 border-slate-700 text-white"
                   />
@@ -255,14 +255,14 @@ export default function ProfilePage() {
               <CardContent className="space-y-4">
                 <div className="flex flex-col items-center justify-center space-y-4">
                   <Avatar className="h-32 w-32">
-                    <AvatarImage src={user?.avatar} alt={user?.username} />
+                    <AvatarImage src={user?.avatar_url} alt={user?.email} />
                     <AvatarFallback className="bg-cyan-800 text-cyan-100 text-xl">
-                      {user?.username?.slice(0, 2).toUpperCase() || <UserCircle className="h-12 w-12" />}
+                      {user?.initials || <UserCircle className="h-12 w-12" />}
                     </AvatarFallback>
                   </Avatar>
 
                   <div className="text-center">
-                    <p className="text-lg font-medium">{user?.fullName || user?.username}</p>
+                    <p className="text-lg font-medium">{user?.full_name || user?.email}</p>
                     <p className="text-sm text-slate-400">{user?.email}</p>
                   </div>
 
