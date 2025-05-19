@@ -2,6 +2,9 @@
 
 A modern, feature-rich dashboard for cybersecurity professionals, built with Next.js, React, and Tailwind CSS.
 
+# Preview Image
+![image](image.png)
+
 ## 🚀 Tech Stack
 
 - **Framework**: [Next.js 15](https://nextjs.org/) with React 19
