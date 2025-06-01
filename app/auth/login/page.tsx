@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { useToast } from "@/components/ui/use-toast"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
@@ -15,15 +16,20 @@ export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false)
   const { login } = useAuth()
   const router = useRouter()
+  const { toast } = useToast()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
     try {
       await login(email, password)
+      // Only redirect if login was successful
       router.push("/")
     } catch (error) {
-      console.error(error)
+      console.error("Login error:", error)
+      // Error toast is handled in the auth context
+      // Clear password field on error
+      setPassword("")
     } finally {
       setIsLoading(false)
     }
@@ -48,6 +54,7 @@ export default function LoginPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                  autoComplete="email"
                 />
               </div>
               <div className="flex flex-col space-y-1.5">
@@ -59,6 +66,7 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
+                  autoComplete="current-password"
                 />
               </div>
             </div>

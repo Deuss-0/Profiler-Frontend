@@ -408,6 +408,11 @@ export function BookmarksGrid() {
 
   const handleEditCategory = async () => {
     if (!newCategory.id || !newCategory.name) {
+      toast({
+        title: "Error",
+        description: "Category ID and name are required",
+        variant: "destructive",
+      });
       return;
     }
 
@@ -454,7 +459,18 @@ export function BookmarksGrid() {
           });
           
           if (!response.ok) {
-            throw new Error(`API error: ${response.status}`);
+            const errorText = await response.text();
+            let errorMessage = `API error: ${response.status}`;
+            try {
+              const errorData = JSON.parse(errorText);
+              errorMessage = errorData.message || errorData.error || errorMessage;
+            } catch (_) {
+              // If parsing fails, use the error text if available
+              if (errorText) {
+                errorMessage = errorText;
+              }
+            }
+            throw new Error(errorMessage);
           }
           
           const responseData = await response.json();
@@ -484,21 +500,51 @@ export function BookmarksGrid() {
         } else {
           // Regular update for an existing category with a valid ID
           const apiUrl = API_URL ? `${API_URL}/api/bookmarks/category` : '/api/bookmarks/category';
+          
+          // Ensure the ID is properly formatted as a string
+          const categoryId = String(newCategory.id);
+          
           const response = await fetch(apiUrl, {
-            method: 'PUT',
+            method: 'POST', // Changed from PUT to POST to match API expectations
             headers: {
               'Content-Type': 'application/json',
             },
             credentials: 'include',
             body: JSON.stringify({
-              id: newCategory.id,
+              id: categoryId,
               name: newCategory.name,
               icon: newCategory.icon,
             }),
           });
           
           if (!response.ok) {
-            throw new Error(`API error: ${response.status}`);
+            const errorText = await response.text();
+            let errorMessage = `API error: ${response.status}`;
+            try {
+              const errorData = JSON.parse(errorText);
+              errorMessage = errorData.message || errorData.error || errorMessage;
+            } catch (_) {
+              // If parsing fails, use the error text if available
+              if (errorText) {
+                errorMessage = errorText;
+              }
+            }
+            throw new Error(errorMessage);
+          }
+
+          const responseData = await response.json();
+          if (responseData.category) {
+            // Update with server response data
+            setCategories(prev => prev.map(cat => {
+              if (cat.id === categoryId) {
+                return {
+                  ...cat,
+                  name: responseData.category.name,
+                  icon: responseData.category.icon
+                };
+              }
+              return cat;
+            }));
           }
         }
       }
@@ -519,9 +565,10 @@ export function BookmarksGrid() {
       });
     } catch (error) {
       console.error("Error updating category:", error);
+      // Show error toast with the specific error message
       toast({
         title: "Error updating category",
-        description: "Category updated locally, but couldn't connect to server.",
+        description: error instanceof Error ? error.message : "Failed to update category. Please try again.",
         variant: "destructive",
       });
       

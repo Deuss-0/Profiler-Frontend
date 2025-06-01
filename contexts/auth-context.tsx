@@ -20,7 +20,7 @@ type AuthContextType = {
   user: User | null
   isLoading: boolean
   isAuthenticated: boolean
-  login: (email: string, password: string) => Promise<void>
+  login: (email: string, password: string) => Promise<boolean>
   logout: () => Promise<void>
   checkSession: () => Promise<void>
 }
@@ -220,17 +220,27 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           description: "You have been successfully logged in.",
           className: "bg-emerald-800 border-0 text-white",
         })
-        router.push("/dashboard")
+        return true; // Return true to indicate successful login
       } else {
-        throw new Error(data.message || "Login failed")
+        // Handle specific error cases
+        if (response.status === 401) {
+          throw new Error("Invalid email or password")
+        } else if (response.status === 403) {
+          throw new Error("Your account has been disabled")
+        } else if (response.status === 429) {
+          throw new Error("Too many login attempts. Please try again later")
+        } else {
+          throw new Error(data.message || "Login failed. Please try again")
+        }
       }
     } catch (error) {
       console.error("Login failed:", error)
       toast({
-        title: "Error",
-        description: error instanceof Error ? error.message : "Login failed. Please check your credentials and try again.",
+        title: "Login Failed",
+        description: error instanceof Error ? error.message : "An unexpected error occurred. Please try again.",
         variant: "destructive",
       })
+      throw error; // Re-throw the error to be handled by the login page
     }
   }
 
